@@ -1,0 +1,20 @@
+{
+    "fig1.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, negro para líneas. Comparación lado a lado de dos combustores de turbofan: izquierda combustor can-anular con múltiples liners tubulares dentro de carcasa anular, derecha combustor anular completo como anillo continuo. Mostrar patrones de inyección de combustible (swirlers), flujo de aire primario/secundario/dilución con flechas claras. Etiquetas técnicas mínimas fuera del área principal si es necesario pero sin texto incrustado dentro del diagrama. Vista en corte longitudinal y vista frontal simplificada. Estilo limpio IEEE, sin sombras, sin gradientes, sin elementos decorativos"
+    },
+    "fig2.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, negro para líneas. Comparación lado a lado de dos arquitecturas de combustor: izquierda combustor can-anular mostrando múltiples liners tubulares dentro de carcasa anular con paredes divisorias, derecha combustor anular completo como anillo continuo sin divisiones internas. Incluir corte longitudinal superior y vista frontal inferior para cada uno. Flechas claras y diferenciadas para flujo de aire primario (azul), secundario (gris) y dilución (negro). Mostrar swirlers y zonas de inyección de combustible de forma simplificada. Estilo limpio IEEE, sin sombras, sin gradientes, sin texto incrustado dentro del diagrama"
+    },
+    "fig3.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, negro para líneas. Gráficos comparativos lado a lado: dos curvas principales (azul para anular, gris para can-anular). Gráfico superior: Eficiencia de combustión (%) vs Relación de equivalencia (0.2-0.5). Gráfico inferior: Pérdida de presión total (%) vs Relación de equivalencia. Incluir marcadores de puntos de operación (take-off, crucero, idle). Leyendas claras fuera del área gráfica. Estilo limpio IEEE, sin sombras, sin gradientes, sin texto incrustado dentro del diagrama"
+    },
+    "fig4.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, negro para líneas. Gráfico de perfiles radiales de NOx: eje X posición radial (0 a 1, normalized), eje Y concentración NOx (ppm). Dos curvas principales - azul para combustor anular (más plana y baja), gris para can-anular (con picos más pronunciados). Incluir marcadores y líneas de promedio. Leyendas claras fuera del área gráfica. Estilo limpio IEEE, sin sombras, sin gradientes, sin texto incrustado dentro del diagrama"
+    },
+    "fig5.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, negro para líneas. Radar chart comparativo (spider chart) con seis ejes: Eficiencia de combustión, Reducción NOx, Uniformidad térmica, Robustez transitoria, Costo mantenimiento, Flexibilidad SAF. Dos polígonos superpuestos: azul para anular (más fuerte en eficiencia y emisiones), gris para can-anular (más fuerte en robustez y mantenimiento). Estilo limpio IEEE, sin sombras, sin gradientes, sin texto incrustado dentro del diagrama"
+    },
+    "fig6.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, negro para líneas. Infografía resumen comparativo final: dos columnas principales (Can-Anular vs Anular). Iconos simplificados o barras para métricas clave: Eficiencia, NOx, Uniformidad térmica, Mantenibilidad, Flexibilidad SAF. Usar checkmarks y flechas de ventaja. Diseño equilibrado y claro tipo dashboard IEEE. Estilo limpio, sin sombras, sin gradientes, sin texto incrustado dentro del diagrama"
+    }
+}

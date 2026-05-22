@@ -1,0 +1,46 @@
+\section{Antecedentes y Estado del Arte}
+
+\subsection{2.1. Tipos de combustores: can, can-anular y anular}
+
+Particularmente llamativo es el hecho de que la elección de arquitectura de cámara de combustión siga representando uno de los compromisos más delicados en el diseño de motores aeronáuticos. Los combustores can, predominantes en las primeras generaciones de turborreactores, destacaban por su simplicidad constructiva y facilidad de mantenimiento individual. Cada “lata” operaba de forma prácticamente independiente, lo que facilitaba pruebas en banco pero penalizaba el peso y la uniformidad térmica.
+
+La evolución hacia configuraciones can-anulares buscó un punto medio razonable: varias cámaras tubulares alojadas dentro de una carcasa anular. Este diseño mejoró la distribución circunferencial del flujo y redujo significativamente el peso específico, manteniendo al mismo tiempo accesibilidad para inspecciones. 
+
+Resulta revelador observar cómo, según revisiones técnicas recientes, los combustores anulares completos han consolidado ventajas sustanciales en eficiencia y emisiones al eliminar las paredes inter-cámara y permitir un mejor aprovechamiento del aire de dilución \cite{SafeFly2025}. 
+
+\begin{table}[h]
+\centering
+\caption{Comparación histórica de eficiencia y emisiones según arquitectura de combustor}
+\label{tab:comparacion_historica}
+\begin{tabular}{lccc}
+\hline
+Arquitectura & Eficiencia Comb. (\%) & NOx (g/kN, ISA) & Peso Relativo \\
+\hline
+Can (legacy) & 96--97.5 & 45--60 & 1.00 \\
+Can-Anular & 97.5--98.5 & 35--48 & 0.75 \\
+Anular Completo & 98.2--99.1 & 22--32 & 0.62 \\
+\hline
+\end{tabular}
+\end{table}
+
+La Tabla 2 sintetiza datos consolidados que ilustran el progreso cuantitativo. Aunque los números tienden a variar según la presión y temperatura de operación, la tendencia general parece clara: los diseños anulares ofrecen mejoras simultáneas en eficiencia térmica y reducción de contaminantes, a costa de mayor complejidad en manufactura y validación experimental.
+
+\subsection{2.2. Avances en reducción de emisiones (2022-2026)}
+
+Lejos de ser un asunto resuelto, la literatura del período 2022-2026 revela un esfuerzo intenso por llevar las emisiones por debajo de los umbrales que los estándares CAEP exigirán en la próxima década. 
+
+Aunque los enfoques clásicos basados en rich-quench-lean han dado frutos notables, los avances más prometedores provienen de configuraciones lean premixed y sistemas de inyección multipunto que minimizan zonas de alta temperatura. Chen y colaboradores, en una revisión exhaustiva, destacan que las reducciones de NOx superiores al 50\% respecto a baselines de 2018 ya son alcanzables en condiciones de crucero mediante optimización cuidadosa de la aerodinámica interna y control activo de equivalencia \cite{Chen2025}. 
+
+No obstante, cabe matizar que muchos de estos resultados provienen de condiciones ideales de laboratorio o simulaciones validadas parcialmente. La brecha entre banco y vuelo real sigue siendo un punto débil que merece atención sostenida.
+
+\subsection{2.3. Integración con SAF e hidrógeno}
+
+Uno de los desafíos persistentes que surge al analizar la próxima generación de motores radica en cómo las arquitecturas existentes responden a combustibles con propiedades físicas y químicas distintas. Los combustibles sostenibles de aviación (SAF) presentan variaciones en densidad, viscosidad y contenido aromático que afectan directamente la atomización y la estabilidad de la llama.
+
+Liu et al. demostraron mediante pruebas en motor completo que los combustores anulares tienden a mostrar mejor tolerancia a mezclas SAF de hasta 50\% en comparación con diseños can-anulares, principalmente por su superior capacidad de mezcla y menor formación de soot \cite{Liu2024}. 
+
+La transición hacia hidrógeno añade otra capa de complejidad. Aunque su alto poder calorífico y cero emisiones de carbono resultan atractivos, la velocidad de llama mucho mayor y el rango de inflamabilidad amplio exigen rediseños profundos de los swirlers y sistemas de inyección. 
+
+Chen complementa esta visión al señalar que las arquitecturas anulares, por su geometría continua, facilitan la implementación de conceptos de combustión distribuida que podrían mitigar los riesgos de flashback asociados al hidrógeno \cite{Chen2025}. 
+
+En conjunto, el estado del arte sugiere que los combustores anulares poseen una ventaja estructural para la aviación sostenible del futuro, aunque persisten interrogantes importantes sobre durabilidad de materiales, costos de producción y certificación regulatoria que el presente análisis comparativo busca iluminar.

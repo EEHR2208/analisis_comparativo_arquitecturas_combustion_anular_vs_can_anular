@@ -1,0 +1,51 @@
+\section{Metodología de Análisis Comparativo}
+
+\subsection{4.1. Modelos CFD y 1D}
+
+Uno de los desafíos persistentes que surge al comparar arquitecturas de combustión radica en equilibrar la fidelidad de los modelos con su viabilidad computacional. Para este estudio se empleó un enfoque híbrido que combina simulaciones CFD tridimensionales de alta resolución con modelos unidimensionales rápidos para exploración paramétrica.
+
+El modelo 1D sigue la formulación propuesta por Jeong y Ahn para combustores de tipo double annular, extendiéndola con correlaciones empíricas actualizadas para pérdidas de presión y eficiencia de combustión \cite{Jeong2021}. Este enfoque permite barridos rápidos de condiciones operativas y constituye la base para la estimación inicial de emisiones.
+
+\begin{equation}
+\frac{dT}{dx} = \frac{\dot{Q}_{comb} - \dot{Q}_{wall} - \dot{m} c_p \frac{dT_{ref}}{dx}}{ \dot{m} c_p }
+\label{eq:temp_gradient}
+\end{equation}
+
+La Ecuación 2 representa el modelo simplificado de emisión de NOx basado en la correlación de temperatura adiabática y tiempo de residencia, calibrado específicamente para condiciones de alta presión.
+
+Complementariamente, las simulaciones CFD se realizaron con la suite NUMECA Fine/Open siguiendo la metodología detallada por Moreno et al. para diseños anulares en motores CFM56 \cite{Moreno2024}. Se utilizaron mallas estructuradas de aproximadamente 8-12 millones de elementos por configuración, con refinamiento en zonas de swirler, inyección y llama. El modelo de turbulencia SST $k-\omega$ combinado con el modelo de combustión Flamelet Generated Manifold (FGM) demostró buena concordancia con datos experimentales disponibles.
+
+\begin{table}[h]
+\centering
+\caption{Parámetros principales de simulación}
+\label{tab:parametros_simulacion}
+\begin{tabular}{lcc}
+\hline
+Parámetro & Valor Can-Anular & Valor Anular \\
+\hline
+Presión de entrada (bar) & 25--35 & 25--35 \\
+Temperatura de entrada (K) & 650--850 & 650--850 \\
+Relación de equivalencia global & 0.25--0.45 & 0.25--0.45 \\
+Número de elementos (millones) & 9.2 & 11.8 \\
+Turbulencia modelo & SST $k-\omega$ & SST $k-\omega$ \\
+\hline
+\end{tabular}
+\end{table}
+
+La Tabla 3 resume los parámetros clave empleados en ambas configuraciones para garantizar comparabilidad directa.
+
+\subsection{4.2. Condiciones operativas y métricas de evaluación}
+
+Resulta revelador observar cómo la selección de puntos operativos influye decisivamente en las conclusiones comparativas. Se consideraron cuatro condiciones representativas: despegue (take-off), crucero, aproximación y idle, basadas en ciclos típicos de motores turbofan de alto bypass ratio (BPR 9-12).
+
+Las métricas de desempeño incluyeron eficiencia de combustión, pérdida de presión total, factor de patrón de temperatura de salida (OTDF y RTDF), estabilidad de llama (medida mediante índice de Damköhler) y tiempo de residencia efectivo. Particularmente llamativo es el hecho de que estas métricas no siempre evolucionen en la misma dirección, lo que obliga a un análisis multicriterio cuidadoso.
+
+Aunque los modelos CFD tienden a predecir con buena precisión las tendencias relativas, cabe matizar que las validaciones absolutas contra datos de motor completo siguen siendo limitadas por restricciones de confidencialidad industrial.
+
+\subsection{4.3. Criterios de sostenibilidad}
+
+Lejos de ser un asunto resuelto, la evaluación de sostenibilidad exige ir más allá de las emisiones en el escape. Se adoptó un marco multicriterio que considera emisiones específicas de NOx, CO, hidrocarburos no quemados y número de partículas (nvPM), junto con indicadores de ciclo de vida simplificados (combustible consumido por unidad de empuje).
+
+Se incorporaron además métricas de flexibilidad de combustible, evaluando el comportamiento con queroseno convencional, mezclas SAF 50\% y escenarios preliminares de hidrógeno. Los umbrales de referencia se alinearon con proyecciones CAEP/12 y objetivos de la iniciativa Destination 2050.
+
+Moreno et al. sirvieron de referencia para calibrar los modelos de mezcla y reacción bajo diferentes composiciones de combustible \cite{Moreno2024}. Esta integración permite no solo comparar las arquitecturas en condiciones actuales, sino también proyectar su potencial para cumplir con los requisitos ambientales de la próxima generación de aeronaves comerciales. El siguiente apartado presenta los resultados obtenidos bajo este marco metodológico consistente.
